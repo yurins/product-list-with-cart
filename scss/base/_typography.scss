@@ -1,0 +1,18 @@
+@use '../utility/index' as utility;
+
+.main-menu {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.item__category {
+    font-size: 0.875rem;
+    color: utility.$brown;
+}
+
+.item__price {
+    font-size: 1rem;
+    color: utility.$red;
+    font-weight: 500;
+}

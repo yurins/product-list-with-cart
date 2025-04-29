@@ -1,0 +1,18 @@
+@use '../utility/index' as utility;
+.cart-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  width: 100%;
+  position: relative;
+  top: -2rem;
+}
+
+.add-to-cart {
+  min-width: 7.5rem;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  position: relative;
+}

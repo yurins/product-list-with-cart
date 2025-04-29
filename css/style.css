@@ -1,0 +1,482 @@
+/*variables.scss*/
+.add-to-cart {
+  min-width: 7.5rem;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  position: relative;
+  top: -2rem;
+  gap: 0.5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #260F08;
+  background-color: #fff;
+  border: solid 0.05rem #AD8A85;
+  font-weight: 600;
+}
+
+.cart-controls button {
+  /*min-width: 5rem;*/
+  border-radius: 100%;
+  border: solid 0.01rem #fff;
+  position: relative;
+  background-color: #C73B0F;
+  color: #fff;
+  font-size: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.cart-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 5rem;
+  border-radius: 2rem;
+  position: relative;
+  top: -2rem;
+  background-color: #C73B0F;
+  border-radius: 2rem;
+  border: none;
+}
+
+.quantity {
+  color: #fff;
+}
+
+.confirm-button,
+.close-button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #C73B0F;
+  color: #fff;
+}
+
+.close-button {
+  width: 100%;
+  border: none;
+  border-radius: 2rem;
+  background-color: #C73B0F;
+  color: #fff;
+  margin: 2rem auto 0 auto;
+}
+
+.card .cart-controls {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-self: center;
+  margin: 0 auto;
+  height: 3rem;
+}
+
+.card {
+  padding-bottom: 1.5rem;
+}
+.card h2 {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+
+.card img {
+  max-width: 100%;
+  display: block;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+.card.selected img {
+  border: 0.2rem solid #C73B0F;
+  border-radius: 0.5rem;
+}
+
+.item__category {
+  padding-bottom: 0.5rem;
+}
+
+.cart-count {
+  color: black;
+}
+
+.modal-container {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  text-align: left;
+  max-width: 100%;
+  max-height: 78vh;
+  overflow-y: auto;
+  margin-bottom: 3rem;
+}
+.modal-content h1 {
+  width: 60%;
+  font-size: 2.5rem;
+  color: #260F08;
+  padding-bottom: 0.5rem;
+}
+
+.order-confirmation-enjoy {
+  color: #87635A;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+
+.confirmation-detail-container {
+  background-color: #FCF8F6;
+  padding: 1rem 1.5rem;
+  border-radius: 0.6rem;
+}
+
+.modal-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.3rem;
+}
+
+.cart-item-modal {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-bottom: 0.05rem solid #F5EEEC;
+  gap: 1rem;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cart-item-details h2 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  width: 40vw;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+}
+
+.modal-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  align-items: center;
+}
+
+.cart {
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 1rem;
+}
+@media screen and (min-width: 48rem) {
+  .cart {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .cart {
+    margin-top: 0;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+}
+
+.cart-header,
+.cart-quantity {
+  font-size: 1.5rem;
+  color: #C73B0F;
+  padding-bottom: 1.5rem;
+}
+
+.cart-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+  border-bottom: solid 0.113rem #F5EEEC;
+}
+.cart-item h2 {
+  color: #260F08;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding-bottom: 0.5rem;
+}
+.cart-item p {
+  padding-bottom: 1.5rem;
+}
+
+.cart-item-quantity {
+  font-size: 0.875rem;
+  color: #C73B0F;
+  font-weight: 600;
+}
+
+.cart-item-at {
+  font-size: 0.875rem;
+  color: #87635A;
+  padding-left: 0.5rem;
+}
+
+.cart-item-total {
+  font-size: 0.875rem;
+  color: #87635A;
+  font-weight: 600;
+  padding-left: 1.2rem;
+}
+
+.remove-from-cart {
+  position: absolute;
+  right: 0;
+  top: 35%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.remove-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px #AD8A85;
+  padding: 0.2rem;
+}
+
+.carbon-image-container {
+  gap: 0.5rem;
+  background-color: #FCF8F6;
+  border-radius: 0.5rem;
+  padding: 1rem 0.2rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.carbon-text {
+  font-size: 0.875rem;
+  color: #260F08;
+}
+
+.carbon-text-bold {
+  font-weight: 600;
+}
+
+.cart-total {
+  padding-bottom: 1.5rem;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.order-total-left {
+  text-align: left;
+  font-weight: 300;
+}
+
+.order-total-right {
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.empty-cart-image {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.empty-cart-text {
+  text-align: center;
+  color: #87635A;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.main-menu h1 {
+  font-size: 2.5rem;
+}
+
+.item__category {
+  font-size: 0.875rem;
+  color: #87635A;
+}
+
+.item__price {
+  font-size: 1rem;
+  color: #C73B0F;
+  font-weight: 500;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
+  background-color: #FCF8F6;
+}
+
+main {
+  overflow: hidden;
+}
+
+.cart {
+  background-color: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  max-width: 100%;
+}
+@media screen and (min-width: 48rem) {
+  body {
+    padding: 2.5rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  body {
+    padding: 5rem 2.5rem;
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 23.375rem;
+}
+main h1 {
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 48rem) {
+  main {
+    display: grid;
+    max-width: 100%;
+    justify-content: unset;
+  }
+}
+@media screen and (min-width: 80rem) {
+  main {
+    grid-template-columns: 70% 30%;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .main-menu {
+    margin-right: 2rem;
+  }
+}
+
+header {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

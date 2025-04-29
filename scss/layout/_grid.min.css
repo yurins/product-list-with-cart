@@ -1,0 +1,1 @@
+@use '../utility/_index' as utility;body{display:flex;flex-direction:column;padding:1.5rem;max-width:100%}main{display:flex;flex-wrap:wrap;justify-content:center;width:100%;max-width:23.375rem}main h1{padding-bottom:2rem}header{padding-bottom:2rem}

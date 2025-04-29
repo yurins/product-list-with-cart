@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Product list with cart</title>
+</head>
+<body>
+  <main>
+    <section id="menu" class="main-menu">
+      <h1>Desserts</h1>
+      <div class="menu-items"></div>
+    </section>
+    <aside class="cart">
+      <div>
+        <h2 class="cart-header">Your Cart ( <span class="cart-quantity">0</span> )</h2>
+        <div class="cart-items"></div>
+        <div class="cart-total"></div>
+        <div class="carbon-image-container">
+         <img src="images/icon-carbon-neutral.svg" class="carbon-image" alt="carbon neutral image">
+         <p class="carbon-text">This is a <span class="carbon-text-bold">carbon-neutral</span> delivery</p>
+        </div>
+        <button class="confirm-button">Confirm Order</button>
+      </div>  
+    </aside>  
+    <div class="modal-container" id="modal">
+      <div class="modal-content">
+        <img src="images/icon-order-confirmed.svg" alt="order confirmation">
+        <h1>Order Confirmed</h1>
+        <p class="order-confirmation-enjoy">We hope you enjoy your food!</p>
+        <div class="confirmation-detail-container">
+          <div class="confirmation-detail"></div>
+          <div class="modal-total"></div>
+        </div>  
+       <button class="close-button">Start New Order</button>
+      </div>
+    </div> 
+  </main>
+</body>
+<script src="js/script.js"></script>
+</html>

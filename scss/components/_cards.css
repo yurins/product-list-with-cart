@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@use '../utility/_index' as utility;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  max-width: 100%;
+  display: block;
+  border: 0;
+  /* デフォルトではボーダーなし */
+}
+
+.card.selected img {
+  border: 0.2rem solid #C73B0F;
+  /* 選択された場合、画像にボーダーを追加 */
+}

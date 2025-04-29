@@ -1,0 +1,4 @@
+@use '../utility/index' as utility;
+.cart {
+  padding: 1.5rem;
+}

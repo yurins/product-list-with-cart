@@ -1,0 +1,51 @@
+@use '../utility/_index' as utility;
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    max-width: 100%;
+    @include utility.tablet {
+        padding: 2.5rem;
+    }
+    @include utility.desktop {
+        padding: 5rem 2.5rem;
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 23.375rem;
+    h1 {
+        padding-bottom: 2rem;
+    }
+    @include utility.tablet {
+        display: grid;
+        max-width: 100%;
+        justify-content: unset;
+    }
+    @include utility.desktop {
+        grid-template-columns: 70% 30%;
+    }
+}
+
+.main-menu {
+    @include utility.desktop {
+        margin-right: 2rem;
+    }
+}
+
+header {
+    padding-bottom: 2rem;
+}
+
+.menu-items {
+    @include utility.tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem 1.5rem;
+    }
+}

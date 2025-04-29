@@ -1,0 +1,8 @@
+@use '../utility/index' as utility;
+.modal-container {
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}

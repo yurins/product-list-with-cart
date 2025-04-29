@@ -1,0 +1,125 @@
+//cart.scss
+@use '../utility/index' as utility;
+
+.cart {
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 1rem;
+    @include utility.tablet {
+        padding: 1.5rem;
+        margin-top: 2rem;
+    }
+    @include utility.desktop {
+        margin-top: 0;
+        max-height: fit-content;
+    }
+}
+
+.cart-header, 
+.cart-quantity {
+    font-size: 1.5rem;
+    color: utility.$red;
+    padding-bottom: 1.5rem;
+}
+
+.cart-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+    border-bottom: solid 0.113rem utility.$rosePink;
+    h2 {
+        color: utility.$darkBrown;
+        font-weight: 500;
+        font-size: 0.875rem;
+        padding-bottom: .5rem;
+    }
+    p {
+        padding-bottom: 1.5rem;
+    }
+
+}
+
+.cart-item-quantity {
+    font-size: .875rem;
+    color: utility.$red;
+    font-weight: 600;
+}
+
+.cart-item-at {
+    font-size: .875rem;
+    color: utility.$brown;
+    padding-left: .5rem;
+}
+
+.cart-item-total {
+    font-size: 0.875rem;
+    color: utility.$brown;
+    font-weight: 600;
+    padding-left: 1.2rem;
+}
+
+.remove-from-cart {
+    position: absolute;
+    right: 0;
+    top: 35%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px utility.$pinkBrown;
+    padding: .2rem;
+}
+
+.carbon-image-container {
+    gap: .5rem;
+    background-color: utility.$roseWhite;
+    border-radius: .5rem;
+    padding: 1rem .2rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.carbon-text {
+    font-size: .875rem;
+    color: utility.$darkBrown;
+}
+
+.carbon-text-bold {
+    font-weight: 600;
+}
+
+.cart-total {
+    padding-bottom: 1.5rem;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+  
+.order-total-left {
+    text-align: left;
+    font-weight: 300;
+}
+  
+.order-total-right {
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.empty-cart-image {
+    margin:  0 auto;
+    padding: 1rem;
+}
+
+.empty-cart-text {
+    text-align: center;
+    color: utility.$brown;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
