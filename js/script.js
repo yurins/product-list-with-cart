@@ -131,7 +131,7 @@ items.forEach(item => {
     </picture>
     <div class=${quantity === 0 ? "cart-controls" : "cart-controls quantity-controls"}">
       ${quantity === 0 ? `
-        <button class="add-to-cart" data-name="${item.name}"><img src="images/icon-add-to-cart.svg" alt="add to cart">
+        <button class="add-to-cart" data-name="${item.name}"><img src="images/icon-add-to-cart.svg" alt="">
         Add to Cart</button>
       ` : `
         <button class="decrease" data-name="${item.name}">-</button>
