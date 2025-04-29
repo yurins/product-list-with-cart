@@ -136,6 +136,9 @@
   color: #260F08;
   padding-bottom: 0.5rem;
 }
+.modal-content img {
+  padding-bottom: 1.5rem;
+}
 
 .order-confirmation-enjoy {
   color: #87635A;
